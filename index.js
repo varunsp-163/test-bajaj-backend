@@ -51,7 +51,12 @@ app.post("/bfhl", (req, res) => {
 
 // GET endpoint
 app.get("/bfhl", (req, res) => {
+  console.log("Hello bfhl");
   return res.status(200).json({ operation_code: 1 });
+});
+
+app.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
 const PORT = process.env.PORT || 3000;
