@@ -1,4 +1,3 @@
-// index.js
 const express = require("express");
 const { requestSchema } = require("./schema");
 const app = express();
